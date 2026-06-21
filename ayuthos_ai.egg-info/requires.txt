@@ -1,0 +1,10 @@
+click
+rich
+pydantic
+langgraph
+transformers
+asyncpg
+redis
+aiohttp
+websockets
+python-dotenv

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: ayuthos-ai
+Version: 0.1.0
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: pydantic
+Requires-Dist: langgraph
+Requires-Dist: transformers
+Requires-Dist: asyncpg
+Requires-Dist: redis
+Requires-Dist: aiohttp
+Requires-Dist: websockets
+Requires-Dist: python-dotenv
+Dynamic: requires-dist

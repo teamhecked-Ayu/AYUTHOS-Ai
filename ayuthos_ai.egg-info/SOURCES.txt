@@ -1,0 +1,12 @@
+README.md
+setup.py
+ayuthos_ai.egg-info/PKG-INFO
+ayuthos_ai.egg-info/SOURCES.txt
+ayuthos_ai.egg-info/dependency_links.txt
+ayuthos_ai.egg-info/entry_points.txt
+ayuthos_ai.egg-info/requires.txt
+ayuthos_ai.egg-info/top_level.txt
+cli/__init__.py
+cli/ayuthos.py
+ingestors/__init__.py
+models/__init__.py
