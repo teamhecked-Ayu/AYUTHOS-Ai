@@ -1,5 +1,7 @@
 
 import click
+import asyncio
+from scripts.simulate_ingestion import simulate_ingestion
 from rich.console import Console
 from rich.table import Table
 
@@ -84,6 +86,20 @@ def modify(agent_id, trait, value):
     # Placeholder for actual agent modification logic
     console.print("[yellow]Agent modification logic not yet implemented.[/yellow]")
 
+@click.group()
+def ingest():
+    """Manage data ingestion."""
+    pass
+
+@ingest.command()
+@click.option('--simulate', is_flag=True, help='Simulate data ingestion from various sources.')
+async def run(simulate):
+    """Run data ingestion processes."""
+    if simulate:
+        await simulate_ingestion()
+    else:
+        click.echo("Please specify an ingestion method. Use --simulate for a simulated run.")
+
 @cli.group()
 def config():
     """Manage configuration."""
@@ -106,4 +122,4 @@ def set(key, value):
     console.print("[yellow]Config setting logic not yet implemented.[/yellow]")
 
 if __name__ == '__main__':
-    cli()
+    asyncio.run(cli())
