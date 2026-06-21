@@ -8,6 +8,9 @@ A CLI-native, real-time, 100-agent swarm intelligence engine that transforms liv
 - **PostgreSQL**: The Memory. Stores personas, knowledge graphs, and history.
 - **Redis**: The Nervous System. Real-time event streams and agent communication.
 
+## 🌍 Multi-OS Usage Guide
+For detailed step-by-step instructions on **Linux, Parrot OS, Termux, macOS, and Windows**, see the [**Usage Guide (USAGE.md)**](./USAGE.md).
+
 ## 🚀 Quick Start
 ```bash
 # Setup Python
