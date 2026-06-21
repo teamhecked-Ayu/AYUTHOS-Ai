@@ -3,10 +3,10 @@
 A CLI-native, real-time, 100-agent swarm intelligence engine that transforms live global data into probability-ranked future scenarios, confidence scores, risk assessments, and strategic intelligence reports.
 
 ## 🏛️ Architecture
-- **CLI Layer (Python)**: The Brain. Handles strategy, coordination, and user interface.
-- **Orchestrator (Rust)**: The Muscles. Manages tick-based parallel agent execution.
-- **PostgreSQL**: The Memory. Stores personas, knowledge graphs, and history.
-- **Redis**: The Nervous System. Real-time event streams and agent communication.
+- **CLI Layer (Python) — The Brain**: Handles strategy, coordination, and user interface.
+- **Orchestrator (Rust) — The Muscles**: Manages tick-based parallel agent execution.
+- **PostgreSQL — The Memory**: Stores personas, knowledge graphs, and history.
+- **Redis — The Nervous System**: Real-time event streams and agent communication.
 
 ## 🌍 Multi-OS Usage Guide
 For detailed step-by-step instructions on **Linux, Parrot OS, Termux, macOS, and Windows**, see the [**Usage Guide (USAGE.md)**](./USAGE.md).

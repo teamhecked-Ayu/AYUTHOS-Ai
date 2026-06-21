@@ -8,4 +8,6 @@ redis
 aiohttp
 websockets
 python-dotenv
-transformers
+textblob
+pandas
+numpy

@@ -2,7 +2,7 @@ import asyncio
 import os
 from dotenv import load_dotenv
 
-from ingestors import TwitterIngestor, RedditIngestor, NewsIngestor
+from ingestors import TwitterIngestor, RedditIngestor, NewsIngestor, CryptoPanicIngestor
 from nervous_system import RedisClient
 
 load_dotenv()
@@ -14,6 +14,7 @@ async def simulate_ingestion():
         TwitterIngestor(),
         RedditIngestor(),
         NewsIngestor(),
+        CryptoPanicIngestor(),
     ]
 
     print("Starting real-time data ingestion simulation...")
