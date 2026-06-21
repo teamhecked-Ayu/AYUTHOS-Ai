@@ -3,6 +3,7 @@ import os
 import asyncio
 import asyncpg
 from dotenv import load_dotenv
+from scripts.generate_personas import generate_and_store_personas
 
 load_dotenv()
 
@@ -40,6 +41,7 @@ async def init_db():
         ''')
 
         print("Database initialized successfully.")
+        await generate_and_store_personas()
         await conn.close()
     except Exception as e:
         print(f"Error initializing database: {e}")
